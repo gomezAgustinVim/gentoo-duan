@@ -1,0 +1,24 @@
+configuration {
+// modes: "drun,run,ssh,emoji,calc";
+modes: "drun,ssh";
+font: "JetBrainsMono Nerd Font Medium 10";
+location: 0;
+show-icons: true;
+drun-display-format:        "{name}";
+display-drun:               "";
+display-run:                "";
+display-filebrowser:        "";
+display-window:             "";
+window-format:              "{w} {c}";
+icon-theme: "Tela-circle-nord";
+terminal: "foot";
+ssh-client: "ssh";
+ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+dpi: 120;
+  filebrowser {
+      directories-first: true;
+      sorting-method:    "name";
+  }
+}
+
+@theme "./nord.rasi"
