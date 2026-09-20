@@ -1,0 +1,10 @@
+[Unit]
+Description="Runs waypaper script hourly"
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+Persistent=true
+Unit=waypaperd.service
+
+[Install]
+WantedBy=timers.target

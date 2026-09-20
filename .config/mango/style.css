@@ -1,0 +1,138 @@
+@define-color bg       #282828;
+@define-color fg       #ebdbb2;
+@define-color blk      #2e3440;
+@define-color red      #bf616a;
+@define-color grn      #a3be8c;
+@define-color ylw      #ebcb8b;
+@define-color blu      #81a1c1;
+@define-color mag      #b48ead;
+@define-color cyn      #8fbcbb;
+@define-color brblk    #4c566a;
+@define-color white    #eceff4;
+
+/* Colores adicionales extraídos de tu configuración */
+@define-color white_alt #e5e9f0;
+@define-color orange    #d08770;
+@define-color dark_blu  #5e81ac;
+@define-color win_bg    #83a598;
+@define-color win_brd   #5a8b8c;
+
+* {
+  font-family: "JetBrainsMono Nerd Font Propo", monospace;
+  font-size: 14px;
+  font-weight: bold;
+  min-height: 0;
+  border-radius: 0px;
+  border: none;
+}
+
+window#waybar {
+  background: @bg;
+  padding: 3px 0;
+}
+
+window#waybar.hidden {
+  opacity: 0.98;
+}
+
+tooltip {
+  background-color: @bg;
+  border: 2px solid @fg;
+}
+
+#window,
+#tray,
+#network,
+#wireplumber,
+#battery,
+#backlight,
+#clock,
+#memory,
+#cpu,
+#mpd,
+#workspaces,
+#custom-launcher,
+#custom-bluetooth {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-right: 6px;
+  margin-left: 6px;
+}
+
+#workspaces {
+  font-weight: bold;
+  background: @bg;
+}
+
+#workspaces button {
+  color: @white;
+  min-width: 1.2em;
+  padding: 0 2px;
+}
+
+#workspaces button:hover {
+  background: @brblk;
+}
+
+#workspaces button.active {
+  background: @grn;
+  color: @blk;
+}
+
+#workspaces button.urgent {
+  background: @red;
+}
+
+#window {
+  color: @bg;
+  background: @win_bg;
+  border-radius: 0.5em;
+  border-bottom-color: @win_brd;
+}
+
+window#waybar.empty #window {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  color: transparent;
+  border-bottom: none;
+}
+
+#wireplumber {
+  color: @blu;
+}
+
+#wireplumber.muted {
+  color: @orange;
+}
+
+#backlight {
+  color: @ylw;
+  /* border-bottom-color: #d8a657; */
+}
+
+#battery {
+  color: @dark_blu;
+  /* border-bottom-color: #98971a; */
+}
+
+#battery.charging,
+#battery.plugged {
+  color: @grn;
+}
+
+#battery.critical:not(.charging) {
+  color: @red;
+}
+
+#clock {
+  color: @cyn;
+}
+
+#tray {
+  color: @white_alt;
+}
+
+#mpd {
+  color: @mag;
+}

@@ -1,0 +1,11 @@
+[Unit]
+Description="Runs waypaper script"
+
+[Service]
+User=utane
+Group=utane
+Type=oneshot
+ExecStart=/usr/local/bin/swbg.sh
+
+[Install]
+WantedBy=multi-user.target

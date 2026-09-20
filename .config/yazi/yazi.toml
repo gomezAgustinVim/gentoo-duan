@@ -1,0 +1,39 @@
+[[opener.add-sub]]
+run = ''' printf "sub-add '%%s'\n" %s1 | socat - /tmp/mpv.sock '''
+desc = "Add sub to MPV"
+
+[[open.prepend_rules]]
+url = "*.{ass,srt,ssa,sty,sup,vtt}"
+use = ["add-sub", "edit"]
+
+[[plugin.prepend_previewers]]
+mime = "application/epub+zip"
+run = "epub-preview"
+
+[[plugin.prepend_previewers]]
+mime = "video/*"
+run = "video"
+
+[[plugin.prepend_previewers]]
+mime = "image/{avif,heic,jxl,svg+xml}"
+run = "magick"
+
+[[opener.set-wallpaper]]
+run = "pkill swaybg; swaybg -m fill -i %s1"
+for = "linux"
+desc = "Setear wallpaper"
+orphan = true
+
+[[opener.same-instance]]
+run = "pkill sioyek; sioyek %s1"
+for = "linux"
+desc = "Abrir (misma ventana)"
+orphan = true
+
+[[open.prepend_rules]]
+mime = "image/*"
+use = ["open", "set-wallpaper"]
+
+[[open.prepend_rules]]
+mime = "application/pdf"
+use = ["open", "same-instance"]

@@ -1,0 +1,85 @@
+#!/bin/sh
+
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias v="nvim" vimdiff="nvim -d"
+
+# youtube-dl
+alias \
+	yt='yt-dlp --embed-thumbnail --embed-metadata --add-metadata -i' \
+	yta='yt -x -f bestaudio/best -o "~/Música/dl-music/%(title)s.%(ext)s"' \
+	ytp='yt -x -f bestaudio/best -o "~/Vídeos/Podcast/%(title)s.%(ext)s"' \
+	ytn='yt --embed-thumbnail --embed-metadata -o "./%(title)s.%(ext)s"'
+
+# Expand sudo to work with aliases
+alias sudo="sudo "
+alias suenv="sudo -E " # principalmente utilizado para usar el clipboard de wayland en neovim, desde root
+
+# Verbosity and settings that you pretty much just always are going to want.
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	rm="rm -vI" \
+	mkd="mkdir -pv" \
+	rmd="rmdir -v" \
+	du="du -h" \
+	rs="rsync -Pa" \
+	fm="thunar > /dev/null 2>&1 &" \
+	texwatch="latexmk -pdf -pvc" # better latex compiler
+
+# ffmpeg commands
+alias \
+	ffmpeg="ffmpeg -hide_banner" \
+	ffconvert='find -maxdepth 1 -mindepth 1 \
+        -type f -name "*.mkv" -print \
+        -exec sh -c '\''i="{}"; ffmpeg -i "$i" -c:v libx264 -crf 22 "${i%.mkv}".mp4'\'' \;'
+
+alias \
+	z="zathura" \
+	ka="killall" \
+	g="git status" \
+	gc="git commit -m" \
+	gp="git push" \
+	gb="git branch" \
+	gch="git checkout" \
+	dcu="docker compose up -d" \
+	dcd="docker compose down -v" \
+	i="nsxiv -q -a -t" \
+	sdn="shutdown -h now" \
+	df='df -lH ' \
+	f="fastfetch" \
+	h="htop" \
+	tcopy="wl-copy --trim-newline" \
+	pcopy="pwd | wl-copy --trim-newline" \
+	dopdf="lowriter --headless --convert-to pdf " \
+	wl-clients="mmsg get all-clients | jq" \
+	src="source ~/.config/zsh/.zshrc && echo 'sourceado nwn!'"
+
+# Comandos administrativos de Portage
+alias \
+	eupdate="doas emerge --ask --update --deep --changed-use @world" \
+	eneeded="doas emerge --ask --noreplace" \
+	eclean="doas emerge --ask --depclean" \
+	edeps="qlist -I | grep -vFf /var/lib/portage/world"
+
+# tmux commands
+alias \
+	tn="tmux-sessionizer.sh" \
+	tk="tmux kill-session"
+
+# enable color support of ls and also add handy aliases
+alias \
+	ls="ls -hN --color=auto --group-directories-first" \
+	dt='ls -l | grep "$(if [[ "$(date "+%-d")" -lt 10 ]]; \
+        then date "+%b  %-d"; else date "+%b %-d"; fi)"' \
+	dir="dir --color=auto" \
+	vdir="vdir --color=auto" \
+	grep="grep --color=auto" \
+	fgrep="fgrep --color=auto" \
+	egrep="egrep --color=auto" \
+	diff="diff --color=auto" \
+	fclist="fc-list -f '%{file}\n'" \
+	ip="ip --color=auto"
+
+# Mpv
+alias podcast="mpv --no-video"
+alias serie="mpv list.m3u8 > /dev/null 2>&1"
