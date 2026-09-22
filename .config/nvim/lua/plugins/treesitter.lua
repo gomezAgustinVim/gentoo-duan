@@ -46,4 +46,4 @@ local setup_treesitter = function()
 	})
 end
 
-setup_treesitter()
+-- setup_treesitter()
