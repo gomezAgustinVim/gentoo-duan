@@ -1,0 +1,16 @@
+sys-kernel/installkernel dracut grub
+sys-boot/grub mount
+app-admin/doas persist
+
+gui-apps/waybar backlight tray mpd pipewire
+x11-misc/rofi wayland
+media-libs/freetype harfbuzz
+media-libs/libpulse X
+sci-libs/libqalculate icu
+
+media-fonts/nerdfonts iosevka iosevkaterm jetbrainsmono
+
+xfce-base/tumbler jpeg pdf epub
+>=xfce-base/thunar-4.20.8 udisks
+>=gnome-base/gvfs-1.58.4 udisks
+>=sys-apps/systemd-261.2 policykit

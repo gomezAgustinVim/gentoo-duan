@@ -1,0 +1,6 @@
+media-fonts/nerdfonts
+media-fonts/noto-cjk
+media-fonts/noto-emoji
+media-fonts/kochi-substitute
+media-fonts/vlgothic
+media-fonts/sazanami

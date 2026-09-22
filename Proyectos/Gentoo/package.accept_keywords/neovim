@@ -1,0 +1,3 @@
+>=app-editors/neovim-0.12.3 ~amd64
+>=dev-lua/luv-1.52.1 ~amd64
+

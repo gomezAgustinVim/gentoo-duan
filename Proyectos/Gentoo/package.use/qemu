@@ -1,0 +1,4 @@
+app-emulation/qemu spice
+app-emulation/virt-manager gui
+app-emulation/libvirt policykit
+net-misc/spice-gtk usbredir

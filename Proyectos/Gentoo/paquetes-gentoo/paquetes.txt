@@ -1,0 +1,10 @@
+app-admin/keepassxc
+sys-power/auto-cpufreq
+app-containers/docker
+app-containers/docker-compose
+app-editors/neovim
+app-emulation/qemu
+app-emulation/virt-manager
+app-emulation/virt-viewer
+app-text/typst
+media-gfx/imagemagick

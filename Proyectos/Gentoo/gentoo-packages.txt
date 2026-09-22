@@ -1,0 +1,47 @@
+para principio de instalación
+
+emerge --ask \
+  app-admin/doas \
+  dev-vcs/git \
+  app-editors/neovim \
+  sys-fs/btrfs-progs \
+  sys-fs/cryptsetup \
+  app-crypt/gnupg \
+
+firmware de kernel que recomienda el handbook
+
+emerge --ask sys-kernel/linux-firmware
+emerge --ask sys-firmware/sof-firmware
+emerge --ask sys-kernel/installkernel
+emerge --ask sys-kernel/gentoo-kernel-bin
+
+emerge --ask sys-kernel/linux-firmware sys-kernel/installkernel sys-kernel/gentoo-kernel-bin
+
+emerge --ask \
+  app-shells/zsh \
+  app-shells/zsh-syntax-highlighting \
+  app-shells/gentoo-zsh-completions \
+  app-shells/zsh-completions
+
+emerge --ask \
+  app-portage/eix \
+  gui-apps/foot \
+  app-misc/tmux \
+  x11-misc/rofi
+
+emerge --ask \
+  xfce-base/xfce4-meta \
+  xfce-extra/xfce4-whiskermenu-plugin \
+  x11-themes/gnome-themes-standard \
+  x11-themes/elementary-xfce-icon-theme \
+  media-fonts/jetbrains-mono \
+  media-fonts/symbols-nerd-font \
+  media-fonts/joypixels-color \
+  media-fonts/libertinus
+
+soporte xwayland
+
+emerge --ask \
+  x11-base/xorg-server \
+  x11-apps/xinit
+

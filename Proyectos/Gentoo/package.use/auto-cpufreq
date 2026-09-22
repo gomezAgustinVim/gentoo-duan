@@ -1,0 +1,17 @@
+sys-power/auto-cpufreq python_targets_python3_13 python_single_target_python3_13
+# required by sys-power/auto-cpufreq-2.6.0::guru
+# required by sys-power/auto-cpufreq (argument)
+>=dev-python/click-8.4.2 python_targets_python3_13
+# required by sys-power/auto-cpufreq-2.6.0::guru
+# required by sys-power/auto-cpufreq (argument)
+>=dev-python/pyasyncore-1.0.5 python_targets_python3_13
+# required by sys-power/auto-cpufreq-2.6.0::guru
+# required by sys-power/auto-cpufreq (argument)
+>=dev-python/pyinotify-0.9.6-r1 python_targets_python3_13
+# required by sys-power/auto-cpufreq-2.6.0::guru
+# required by sys-power/auto-cpufreq (argument)
+>=dev-python/urwid-4.0.9 python_targets_python3_13
+# required by dev-python/requests-2.34.2::gentoo
+# required by sys-power/auto-cpufreq-2.6.0::guru
+# required by sys-power/auto-cpufreq (argument)
+>=dev-python/charset-normalizer-3.4.9 python_targets_python3_13

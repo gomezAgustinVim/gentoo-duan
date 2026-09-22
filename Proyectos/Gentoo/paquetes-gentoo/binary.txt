@@ -1,0 +1,2 @@
+app-text/pandoc-bin
+www-client/firefox-bin

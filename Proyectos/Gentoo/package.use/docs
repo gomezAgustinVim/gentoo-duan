@@ -1,0 +1,8 @@
+# required by app-text/calibre-8.9.0::gentoo
+# required by app-text/calibre (argument)
+>=dev-python/pillow-12.3.0 truetype
+# required by app-text/calibre-8.9.0::gentoo
+# required by app-text/calibre (argument)
+>=dev-python/pyqt6-6.11.0-r1 quick svg qml webchannel
+
+app-text/zathura-meta -epub

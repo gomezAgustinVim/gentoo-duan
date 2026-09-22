@@ -1,0 +1,21 @@
+gui-libs/scenefx
+gui-wm/mangowm
+media-fonts/nerdfonts
+media-gfx/nsxiv
+gui-apps/wlr-dpms
+gui-apps/wlr-randr
+gui-apps/wl-clip-persist
+x11-misc/rofi-calc
+app-text/typst
+app-text/sioyek **
+media-video/obs-studio
+app-admin/keepassxc
+
+app-misc/brightnessctl 
+app-misc/yazi 
+gui-apps/wev 
+gui-apps/wtype 
+sys-power/auto-cpufreq 
+x11-themes/catppuccin-gtk
+app-misc/anki
+net-misc/localsend-bin

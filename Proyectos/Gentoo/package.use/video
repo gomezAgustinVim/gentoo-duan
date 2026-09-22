@@ -1,0 +1,6 @@
+>=media-video/ffmpeg-8.1.2 opus x264 vaapi
+>=dev-python/pillow-12.3.0 webp tiff
+>=media-libs/tiff-4.7.1 jpeg
+>=media-libs/gegl-0.4.70 cairo lcms
+>=sys-libs/minizip-ng-4.2.1 compat
+media-video/mpv pipewire vaapi egl wayland -cuda -nvenc

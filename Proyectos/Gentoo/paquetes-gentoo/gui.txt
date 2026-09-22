@@ -1,0 +1,9 @@
+net-libs/nodejs
+media-gfx/gimp
+media-gfx/inkscape
+media-sound/kid3
+app-misc/anki
+app-text/calibre
+media-video/obs-studio
+net-ftp/filezilla
+net-p2p/transmission

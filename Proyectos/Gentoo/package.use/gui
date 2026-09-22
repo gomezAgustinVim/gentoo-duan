@@ -1,0 +1,17 @@
+dev-cpp/gtkmm X wayland
+x11-libs/cairo X wayland
+x11-libs/gtk+ X wayland -cups
+media-libs/mesa wayland
+dev-libs/libdbusmenu gtk3
+app-shells/fzf vim
+app-editors/neovim -gtk
+net-p2p/transmission gtk
+app-admin/keepassxc browser -ssh-agent
+media-video/obs-studio screencast v4l
+net-im/discord appindicator
+app-misc/anki gui
+app-i18n/mozc fcitx5 -ibus -gui
+media-gfx/inkscape cdr jpeg exif spell 
+dev-python/pyqt6  -qml -quick -sql -svg -webchannel -xml
+dev-qt/qtwebchannel qml
+dev-libs/libxml2 icu

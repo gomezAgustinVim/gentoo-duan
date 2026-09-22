@@ -1,0 +1,13 @@
+media-gfx/chafa
+media-gfx/nsxiv
+media-sound/mpc
+media-sound/mpd
+media-sound/mpdscribble
+media-sound/ncmpcpp
+media-sound/pavucontrol
+media-sound/qpwgraph
+media-video/ffmpegthumbnailer
+media-video/mediainfo
+media-video/mpv
+media-video/pipewire
+media-video/wireplumber

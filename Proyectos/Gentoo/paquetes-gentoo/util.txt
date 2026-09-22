@@ -1,0 +1,16 @@
+x11-misc/dunst
+app-arch/engrampa
+app-backup/snapper
+app-misc/brightnessctl
+dev-vcs/git
+gnome-base/gnome-keyring
+gnome-base/gvfs
+gnome-extra/nm-applet
+net-wireless/blueman
+net-wireless/bluez
+gnome-extra/polkit-gnome
+sys-power/thermald
+xfce-base/thunar
+xfce-base/thunar-volman
+xfce-base/tumbler
+xfce-extra/thunar-archive-plugin
