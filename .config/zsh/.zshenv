@@ -9,8 +9,6 @@
 #     export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 # fi
 
-# Add all directories in `~/.local/bin` to $PATH
-PATH="${PATH}:$HOME/.local/bin"
 # unsetopt PROMPT_SP 2>/dev/null
 
 export EDITOR="nvim"

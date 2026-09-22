@@ -1,6 +1,9 @@
 stty stop undef # Stop terminal from freezing
 stty start undef
 
+# Add all directories in `~/.local/bin` to $PATH
+export PATH="${PATH}:$HOME/.local/bin"
+
 # Duan's config for the Zoomer Shell
 export HISTORY_IGNORE="(ls|cd|pwd|exit|sudo reboot|sudo sdn|sdn|history|cd -|cd ..)"
 export SUDO_PROMPT="Cual es tu contraseña %u? nwn: "
