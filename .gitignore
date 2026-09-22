@@ -2,6 +2,7 @@
 /*
 !/
 !.config/
+!.local/bin/
 
 !.gitignore
 
@@ -21,6 +22,7 @@
 .config/GIMP/
 .config/Kid3/
 .config/QtProject.conf
+.config/zathura/zathura-theme
 .config/Thunar/
 .config/autostart/
 .config/dconf/
@@ -41,3 +43,7 @@
 .config/transmission/
 .config/xfce4/
 .config/xsettingsd/
+.config/mpdscribble/
+.config/qalculate/
+.config/procps/
+.config/wget/
