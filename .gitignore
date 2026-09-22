@@ -1,8 +1,8 @@
 # Ignora todo menos config
 /*
-!/
 !.config/
 !.local/bin/
+!Proyectos/Gentoo/
 
 !.gitignore
 
@@ -48,3 +48,5 @@
 .config/procps/
 .config/wget/
 .config/calcure/
+.config/ibus/
+.config/calibre/

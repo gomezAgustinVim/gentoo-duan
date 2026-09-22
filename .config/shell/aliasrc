@@ -59,7 +59,7 @@ alias \
 	eupdate="doas emerge --ask --update --deep --changed-use --getbinpkg @world" \
 	eneeded="doas emerge --ask --noreplace" \
 	eclean="doas emerge --ask --depclean" \
-	edeps="qlist -I | grep -vFf /var/lib/portage/world"
+    edeps="emerge --pretend --depclean --verbose"
 
 # tmux commands
 alias \

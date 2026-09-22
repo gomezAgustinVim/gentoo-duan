@@ -28,7 +28,7 @@
   "clock": {
     "format": "{:%H:%M}",
     "format-alt": "{:%d/%m/%Y}",
-    "on-click-right": "footclient -e calcure",
+    "on-click-right": "footclient -- ~/.local/bin/calcure",
     "tooltip": true,
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
