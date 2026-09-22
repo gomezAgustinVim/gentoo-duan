@@ -1,4 +1,4 @@
-image=~/.local/share/gentoo-lockscreen.png
+image=~/.local/share/lock.png
 font=Iosevka Nerd Font Propo
 font-size=20
 daemonize
