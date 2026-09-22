@@ -28,7 +28,7 @@ application/x-ms-dos-executable=wine.desktop
 application/vnd.openxmlformats-officedocument.wordprocessingml.document=libreoffice-writer.desktop
 video/x-matroska=mpv.desktop
 video/mp4=mpv.desktop
-image/gif=nsxiv.desktop
+image/gif=userapp-nsxiv -a-JS02V3.desktop
 image/png=nsxiv.desktop
 image/heif=nsxiv.desktop
 image/jpeg=nsxiv.desktop
@@ -36,7 +36,8 @@ image/webp=nsxiv.desktop
 text/html=firefox.desktop
 text/xml=firefox.desktop
 application/json=nvim.desktop
-application/pdf=sioyek.desktop;zathura.desktop
+application/pdf=org.pwmt.zathura.desktop;sioyek.desktop
+application/epub+zip=org.pwmt.zathura.desktop
 text/markdown=nvim.desktop
 text/calendar=nvim.desktop
 application/x-zerosize=nvim.desktop
@@ -44,5 +45,6 @@ application/x-zerosize=nvim.desktop
 [Added Associations]
 application/zip=engrampa.desktop
 application/x-zerosize=nvim.desktop
+image/gif=userapp-nsxiv -a-JS02V3.desktop;
 
 [Removed Associations]
